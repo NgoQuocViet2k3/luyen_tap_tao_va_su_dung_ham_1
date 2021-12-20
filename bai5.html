@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let wordInput = prompt('Nhập chòm sao')
+    let arr1=['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+    let arr2=['Ursa','Minor','Tarurus','Cygnus','Lyra','Aquila','UrsaMajor','Leo'];
+    function browseTheArray (wordInput){
+        if (arr1.includes(wordInput)){
+            document.write(arr2[arr1.indexOf(wordInput)]);
+        }else {
+            alert('Không tìm thấy');
+        }
+    }
+browseTheArray(wordInput)
+
+
+</script>
+</body>
+</html>
